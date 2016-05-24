@@ -4,11 +4,11 @@ class CreatePurchases < ActiveRecord::Migration
     	t.string :email
     	t.integer :amount
     	t.string :description
-    	t.string :currenct
+    	t.string :currency
     	t.string :customer_id
     	t.string :card
     	t.integer :product_id
-      t.timestamps null: false
+      t.timestamps null: :false
     end
   end
 end
