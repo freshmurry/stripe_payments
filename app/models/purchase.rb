@@ -1,6 +1,9 @@
-class Purchase < ActiveRecord::Base
-	
+class Purchase < ActiveRecord::Base	
 	after_create :email_purchaser
+
+	def to_param
+		uuid
+	end
 
 	private
 
@@ -8,7 +11,4 @@ class Purchase < ActiveRecord::Base
 	   PurchaseMailer.purchase_receipt(self).deliver
 	end
 
-	def to_param
-		uuid
-	end	
 end
