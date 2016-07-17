@@ -53,8 +53,8 @@ ActiveRecord::Schema.define(version: 20160604031048) do
     t.text     "description"
     t.string   "sku"
     t.decimal  "price"
-    t.datetime "created_at",         null: false
-    t.datetime "updated_at",         null: false
+    t.datetime "created_at"
+    t.datetime "updated_at"
     t.string   "length"
     t.text     "author_description"
     t.string   "author_image_name"
