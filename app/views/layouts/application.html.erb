@@ -1,13 +1,57 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <title>One Month Growth Hacking</title>
+  <title>GroHack | Growth Hacking Crash Course </title>
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, user-scalable=no">
+  <meta name="description" content="In this video, Mattan Griffel introduces you to the concept of Growth Hacking
+  and shares his favorite tips for getting started as a growth hacker.">
+  <meta name="keyword" content="growth hacking, growth hacking video, growth hacking crash course, 
+  growth hacking course, Lean Marketing Techniques, Lean Marketing Tactics, Growth Hacker, What is a growth Hacker, 
+  growth hacking digital marketing, digital marketing techniques, digital marketing tactics">
   <link rel='stylesheet' href='http://fonts.googleapis.com/css?family=Open+Sans:400,700,300,800' >
   <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
   <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
+  
+  <script type="text/javascript" src="https://js.stripe.com/v2/"></script>
+  <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+  // <script type="text/javascript">
+  //   <!-- Fill in your publishable key -->
+  //   Stripe.setPublishableKey('YOUR_PUBLISHABLE_KEY');
+
+  // var stripeResponseHandler = function(status, response) {
+  //   var $form = $('#payment-form');
+
+  //   if (response.error) {
+  //     // Show the errors on the form
+  //     $form.find('.payment-errors').text(response.error.message);
+  //     $form.find('button').prop('disabled', false);
+  //   } else {
+  //     // token contains id, last4, and card type
+  //     var token = response.id;
+  //     // Insert the token into the form so it gets submitted to the server
+  //     $form.append($('<input type="hidden" name="stripeToken" />').val(token));
+  //     // and re-submit
+  //     $form.get(0).submit();
+  //   }
+  // };
+
+  // jQuery(function($) {
+  //   $('#payment-form').submit(function(e) {
+  //     var $form = $(this);
+
+  //     // Disable the submit button to prevent repeated clicks
+  //     $form.find('button').prop('disabled', true);
+
+  //     Stripe.card.createToken($form, stripeResponseHandler);
+
+  //     // Prevent the form from submitting with the default action
+  //     return false;
+  //   });
+  // });
+  // </script>
+  
   <%= csrf_meta_tags %>
 </head>
 <body>
