@@ -10,6 +10,7 @@
   <meta name="keyword" content="growth hacking, growth hacking video, growth hacking crash course, 
   growth hacking course, Lean Marketing Techniques, Lean Marketing Tactics, Growth Hacker, What is a growth Hacker, 
   growth hacking digital marketing, digital marketing techniques, digital marketing tactics">
+  <meta name="stripe-key" content="<%= ENV['STRIPE_PUB_KEY'] %>" />
   <link rel='stylesheet' href='http://fonts.googleapis.com/css?family=Open+Sans:400,700,300,800' >
   <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
   <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
@@ -18,7 +19,8 @@
   <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
   <script type="text/javascript">
     <!-- Fill in your publishable key -->
-    Stripe.setPublishableKey('YOUR_PUBLISHABLE_KEY');
+    $('meta[name="stripe-key"]').attr("content")
+    Stripe.setPublishableKey('<%= ENV['STRIPE_PUB_KEY'] %>');
 
   var stripeResponseHandler = function(status, response) {
     var $form = $('#payment-form');
