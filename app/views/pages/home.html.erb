@@ -3,7 +3,7 @@
             <h1 id="article-title"><%= @product.title %> <span class="font-weight-light"><%= @product.subtitle %></span></h1>
             <h3><small>By <a href="#" data-toggle="modal" data-target="#author-modal"><%= @product.author %></a></small></h3>
 
-            <%= raw @product.description %>
+          <%= raw @product.description %>
         </article>
         <aside id="details-aside" class="col-sm-4">
           <%= form_tag charges_path, id:'chargeForm' do %>
@@ -22,9 +22,10 @@
                   document.getElementById("chargeForm").submit();
                 }
               });
+              
               document.getElementById('btn-buy').addEventListener('click', function(e) {
                 handler.open({
-                  name: 'One Month',
+                  name: 'GROHACK',
                   description: '<%= @product.title %> <%= @product.subtitle %> ($<%= @product.price %>)',
                   amount: document.getElementById("amount").value
                 });
@@ -45,7 +46,7 @@
     </section>
 </div>
 <footer id="site-footer">
-Made by <a href="http://onemonth.com" target="_blank"><%= image_tag('one-month-logo.svg', id: 'one-month-footer-logo', alt: 'One Month') %>
+  <a href="http://onemonth.com" target="_blank"><%= image_tag('one-month-logo.svg', id: 'one-month-footer-logo', alt: 'One Month') %>
 </footer>
 
 <!-- Modal -->
