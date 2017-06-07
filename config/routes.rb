@@ -2,7 +2,9 @@ Rails.application.routes.draw do
 
   devise_for :admin_users, ActiveAdmin::Devise.config
   ActiveAdmin.routes(self)
-   root 'pages#home'
+
+    root 'products#index'
+#   root 'pages#home'
 
   # Support stripe payments through charges
   resources :charges
@@ -13,5 +15,7 @@ Rails.application.routes.draw do
   # Route for showing downloads
   resources :downloads, only: [:show]
 
+  # Route for showing products		
+  resources :products, only: [:index, :show]
   
 end
