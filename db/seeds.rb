@@ -7,33 +7,30 @@
 #   Mayor.create(name: 'Emanuel', city: cities.first)
 
 growth_hacking = Product.create(
-	title: "Growth Hacking", 
+	title: "Song Chordz", 
 	subtitle: "Crash Course", 
-	author: "Mattan Griffel", 
+	author: "Lawrence Murry", 
 	length: "30 minutes", 
-	author_image_name: "teacher-image.jpg", 
+	author_image_name: "murry.png", 
 	price: "4.99", 
 	sku: "GROHACK1", 
 	download_url: "https://player.vimeo.com/video/169370260", 
-	details: "One Video", 
+	details: "1 Chord Sheet", 
 	description: %{
- 		<p>A growth hacker is a rare combination: someone with the right marketing and technical skills who can come up with clever marketing
- 		hacks and also track their results.</p>
+ 		<p>If you are a beginner to intermediate ear-trained keyboard player and are looking for chorded song list, you have come to the right spot.</p>
 
-		<p>In this talk, Mattan Griffel introduces you to the concept of Growth Hacking and shares his favorite tips for getting started as a
-		growth hacker.</p>
-		<p><strong>What You'll Learn</strong></p>
+		<p>Song Chordz provides basic to intermediate song chordz to further develop your playing style.</p>
+		<p><strong>What You'll Receive</strong></p>
 		<ul class="no-indent">
-		<li>What is a growth hacker?</li>
-		<li>The 5 stages of the user lifecycle</li>
-		<li>How to apply the Lean Marketing Framework</li>
-		<li>Resources and tools you'll need to know</li>
+		<li>A contemporary way of playing</li>
+		<li>Song in keys you want to learn</li>
+		<li>Accompanying YouTube Videos to play along with</li>
+		<li>Better appreciation for music</li>
 		</ul>},
 	author_description: %{
-		<p>Hey, I'm Mattan Griffel, co-founder of the Y Combinator backed <a href="http://www.onemonth.com" target="_blank">One Month</a>
-		where I teach the best selling One Month Rails and One Month Growth Hacking.</p>
-	  <p>Why take my class? In the past I've advised companies like Pepsico, Bloomberg, GM, NYSE, and JPMorgan on growth hacking best 
-	  practices. I've also spoken at New York University, Cooper Union and First Round Capital. My goal is to help you and other 
-	  entrepreneurs rapidly grow your business.</p>
-	  <p>Follow me on Twitter <a href="https://twitter.com/mattangriffel" target="_blank">@mattangriffel</a></p>})
+		<p>Hey, I'm Lawrence Murry, Founder of Song Chordz. I created Song Chordz as a way to have a fast and easy acess to tons of popular, contemporary,
+		and traditional song chords for beginning to intermediate ear-trained keyboard players.</p>
+	  <p>Why purchase our chordz? I have a deep passion for musis and playing the keyboad. A ear-traind keyboard player myself, I've been honing craft for 
+	  16 years. I've played mostly in church and school events while in college. My goal is to help you and other musician expand and grow your talent.</p>
+	  <p>Follow me on Twitter <a href="https://twitter.com/freshmurry" target="_blank">@freshmurry</a></p>})
 					 
