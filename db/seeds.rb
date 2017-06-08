@@ -6,7 +6,7 @@
 #   cities = City.create([{ name: 'Chicago' }, { name: 'Copenhagen' }])
 #   Mayor.create(name: 'Emanuel', city: cities.first)
 
-JJ_Hairston = Product.create(
+JJHairston = Product.create(
 	title: "You Deserve It", 
 	subtitle: "By JJ Hairston and Youthful Praise",
 	author: "Lawrence Murry", 
