@@ -3,7 +3,7 @@
 <% end %>
   <section id="content-details" class="row clearfix">
     <article id="details-article" class="col-sm-8">
-      <h1 id="article-title"><%= @product.title %><span class="font-weight-light"><%= @product.subtitle %></span></h1>
+      <h1 id="article-title"><%= @product.title %><span class="font-weight-light"><h3><%= @product.subtitle %></h3></span></h1>
       <h3><small>By <a href="#" data-toggle="modal" data-target="#author-modal"><%= @product.author %></a></small></h3>
 
       <%= @product.description.html_safe %>
@@ -11,7 +11,6 @@
     <aside id="details-aside" class="col-sm-4">
       <!-- Stripe charge form -->
       <%= form_tag charges_path, id:'chargeForm' do %>
-
         <script src="https://checkout.stripe.com/checkout.js"></script>
         <%= hidden_field_tag 'stripeToken' %>
         <%= hidden_field_tag 'stripeEmail' %>
@@ -67,7 +66,7 @@
   <div class="modal-dialog">
     <div class="modal-content">
       <div class="modal-header">
-        <h4 class="modal-title"><span class="glyphicon glyphicon-user"></span>About the Teacher</h4>
+        <h4 class="modal-title"><span class="glyphicon glyphicon-user"></span>About the Founder</h4>
       </div>
       <div class="modal-body clearfix">
         <div id="modal-left" class="pull-left">
