@@ -4,7 +4,7 @@ Rails.application.routes.draw do
   ActiveAdmin.routes(self)
 
     root 'products#index'
-#   root 'pages#home'
+  # root 'pages#home'
 
   # Support stripe payments through charges
   resources :charges
