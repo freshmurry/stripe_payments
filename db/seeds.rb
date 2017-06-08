@@ -6,33 +6,6 @@
 #   cities = City.create([{ name: 'Chicago' }, { name: 'Copenhagen' }])
 #   Mayor.create(name: 'Emanuel', city: cities.first)
 
-jjhairston = Product.create(
-	title: "You Deserve It", 
-	subtitle: "By JJ Hairston and Youthful Praise",
-	author: "Lawrence Murry", 
-	length: "30 minutes", 
-	author_image_name: "murry.png", 
-	price: "4.99", 
-	sku: "CHORDZ1",
-	download_url: "https://s3.amazonaws.com/one-month-stripe-payments/LawrenceMurryResume.pdf", 
-	details: "One (1) Chordz Sheet", 
-	description: %{
- 		<p>If you are a beginner to intermediate ear-trained keyboard player and are looking for chorded song list, you have come to the right spot.</p>
-
-		<p>Song Chordz provides basic to intermediate song chordz to further develop your playing style.</p>
-		<p><strong>What You'll Receive</strong></p>
-		<ul class="no-indent">
-		<li>A contemporary way of playing</li>
-		<li>Song in keys you want to learn</li>
-		<li>Accompanying YouTube Videos to play along with</li>
-		<li>Better appreciation for music</li>
-		</ul>},
-	author_description: %{
-	<p>Hey, I'm Lawrence Murry, Founder of Song Chordz. I created Song Chordz as a way to have a fast and easy access to tons of popular, contemporary, 
-	and traditional song chords for beginning to intermediate ear-trained keyboard players.</p>
-	<p>Why purchase our chordz? I have a deep passion for musis and playing the keyboad. A ear-traind keyboard player myself, I've been honing craft 
-	for 16 years. I've played mostly in church and school events while in college. My goal is to help you and other musician expand and grow your talent.</p>
-	<p>Follow me on Twitter <a href="https://twitter.com/freshmurry" target="_blank">@freshmurry</a></p>})
 	  
 # Monthly Subscription
 	  
@@ -85,7 +58,7 @@ copywriting_monthly = Product.create(
   
   	<p>Follow me on Twitter <a href="https://twitter.com/freshmurry" target="_blank">@freshmurry</a></p>})
 
-analytics_monthly = Product.create(
+jjhairston_monthly = Product.create(
    title: "Analytics Monthly", 
    subtitle: "Ongoing Course", author: "Lawrence Murry", 
    length: "6 months", author_image_name: "murry.png", 
@@ -103,3 +76,31 @@ analytics_monthly = Product.create(
   	for 16 years. I've played mostly in church and school events while in college. My goal is to help you and other musicians expand and grow your talent.</p>
   	
   	<p>Follow me on Twitter <a href="https://twitter.com/freshmurry" target="_blank">@freshmurry</a></p>})
+
+jjhairston = Product.create(
+	title: "You Deserve It", 
+	subtitle: "By JJ Hairston and Youthful Praise",
+	author: "Lawrence Murry", 
+	length: "30 minutes", 
+	author_image_name: "murry.png", 
+	price: "4.99", 
+	sku: "CHORDZ1",
+	download_url: "https://s3.amazonaws.com/one-month-stripe-payments/LawrenceMurryResume.pdf", 
+	details: "One (1) Chordz Sheet", 
+	description: %{
+ 		<p>If you are a beginner to intermediate ear-trained keyboard player and are looking for chorded song list, you have come to the right spot.</p>
+
+		<p>Song Chordz provides basic to intermediate song chordz to further develop your playing style.</p>
+		<p><strong>What You'll Receive</strong></p>
+		<ul class="no-indent">
+		<li>A contemporary way of playing</li>
+		<li>Song in keys you want to learn</li>
+		<li>Accompanying YouTube Videos to play along with</li>
+		<li>Better appreciation for music</li>
+		</ul>},
+	author_description: %{
+	<p>Hey, I'm Lawrence Murry, Founder of Song Chordz. I created Song Chordz as a way to have a fast and easy access to tons of popular, contemporary, 
+	and traditional song chords for beginning to intermediate ear-trained keyboard players.</p>
+	<p>Why purchase our chordz? I have a deep passion for musis and playing the keyboad. A ear-traind keyboard player myself, I've been honing craft 
+	for 16 years. I've played mostly in church and school events while in college. My goal is to help you and other musician expand and grow your talent.</p>
+	<p>Follow me on Twitter <a href="https://twitter.com/freshmurry" target="_blank">@freshmurry</a></p>})  	

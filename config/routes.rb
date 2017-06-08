@@ -4,7 +4,6 @@ Rails.application.routes.draw do
   ActiveAdmin.routes(self)
   
     root :to => 'products#index'
-  # root 'pages#home'
 
   # Route for showing products		
   resources :products, only: [:index, :show]

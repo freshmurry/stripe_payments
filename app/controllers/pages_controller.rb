@@ -1,5 +1,0 @@
-class PagesController < ApplicationController
-  def home
-    @product = Product.find_by_sku("CHORDZ1")
-  end
-end
