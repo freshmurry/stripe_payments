@@ -1,7 +1,7 @@
 class ChargesController < ApplicationController
 
   def create
-    product = Product.find_by_sku("CHORDZ1")
+    product = Product.find_by_sku("CHORDZ1", "CHORDZ2", "COPYWRITING2", "ANNALYTICS2")
 
     customer = Stripe::Customer.create(
       :email => params[:stripeEmail],
