@@ -6,7 +6,7 @@
 #   cities = City.create([{ name: 'Chicago' }, { name: 'Copenhagen' }])
 #   Mayor.create(name: 'Emanuel', city: cities.first)
 
-JJHairston = Product.create(
+JJHairston_monthly = Product.create(
 	title: "You Deserve It", 
 	subtitle: "By JJ Hairston and Youthful Praise",
 	author: "Lawrence Murry", 
@@ -51,8 +51,8 @@ song_chordz_monthly = Product.create(
             <ul class="no-indent">
                 <li>Sheet music written specifically for ear-trained learners</li>
                 <li>Basic chord progressions</li>
-                <li>Contemporary playing style so your playing doesn't sound outdated</li>
-                <li>Notation of Intro, Brakes, Verse, Bridge, and Ending of songs</li>
+                <li>Contemporary playing style</li>
+                <li>Notation of Intro, Verse, Bridge Ending, etc.</li>
             </ul>}, 
     author_description: %{                
     <p>Hey, I'm Lawrence Murry, Founder of Song Chordz. I created Song Chordz as a way to have a fast and easy access to tons of popular, contemporary, 
@@ -74,8 +74,8 @@ copywriting_monthly = Product.create(title: "Copywriting Monthly",
             <ul class="no-indent">
                 <li>Sheet music written specifically for ear-trained learners</li>
                 <li>Basic chord progressions</li>
-                <li>Contemporary playing style so your playing doesn't sound outdated</li>
-                <li>Notation of Intro, Brakes, Verse, Bridge, and Ending of songs</li>
+                <li>Contemporary playing style</li>
+                <li>Notation of Intro, Verse, Bridge, Ending, etc.</li>
              </ul>}, 
  author_description: %{ <p>Hey, I'm Lawrence Murry, Founder of Song Chordz. I created Song Chordz as a way to have a fast and easy access to tons of popular, contemporary, 
 	and traditional song chords for beginning to intermediate ear-trained keyboard players.</p>
