@@ -1,14 +1,14 @@
 <% content_for :head do %>
 	<%= image_tag(@product.header_image_name, id: 'content-header-image', alt: "Learn #{@product.title}") %>
 <% end %>
-  <!--<section id="content-details" class="row clearfix">-->
-  <!--  <article id="details-article" class="col-sm-8">-->
-  <!--    <h1 id="article-title"><%= @product.title %><span class="font-weight-light"><%= @product.subtitle %></span></h1>-->
-  <!--    <h3><small>By <a href="#" data-toggle="modal" data-target="#author-modal"><%= @product.author %></a></small></h3>-->
+  <section id="content-details" class="row clearfix">
+    <article id="details-article" class="col-sm-8">
+      <h1 id="article-title"><%= @product.title %><span class="font-weight-light"><%= @product.subtitle %></span></h1>
+      <h3><small>By <a href="#" data-toggle="modal" data-target="#author-modal"><%= @product.author %></a></small></h3>
 
-  <!--    <%= @product.description.html_safe %>-->
-  <!--  </article>-->
-  <!--  <aside id="details-aside" class="col-sm-4">-->
+      <%= @product.description.html_safe %>
+    </article>
+    <aside id="details-aside" class="col-sm-4">
       <!-- Stripe charge form -->
       <%= form_tag charges_path, id:'chargeForm' do %>
 
@@ -57,7 +57,8 @@
 </div>
 <footer id="site-footer">
   Made by <a href="http://lawrencemurry.com" target="_blank">
-  <%= image_tag('one-month-logo.svg', id: 'one-month-footer-logo', alt: 'Lawrence Murry') %>
+    Lawrence Murry
+  <!--<%= image_tag('one-month-logo.svg', id: 'one-month-footer-logo', alt: 'Lawrence Murry') %>-->
 </a>
 </footer>
 
