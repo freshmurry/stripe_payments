@@ -1,5 +1,5 @@
 <% content_for :head do %>
-	<%= image_tag(@product.header_image_name, id: 'content-header-image', alt: "Your #{@product.title}") %>
+	<%= image_tag(@product.header_image_name, id: 'content-header-img', alt: "#{@product.title}") %>
 <% end %>
   <section id="content-details" class="row clearfix">
     <article id="details-article" class="col-sm-8">
@@ -55,10 +55,7 @@
   </section>
 </div>
 <footer id="site-footer">
-  Made by <a href="http://lawrencemurry.com" target="_blank">
-    Lawrence Murry
-  <!--<%= image_tag('one-month-logo.svg', id: 'one-month-footer-logo', alt: 'Lawrence Murry') %>-->
-</a>
+  Made by <a href="http://lawrencemurry.com" target="_blank" alt="Lawrence Murry">Lawrence Murry</a>
 </footer>
 
 <!-- Modal -->
