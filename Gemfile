@@ -12,8 +12,6 @@ gem 'sqlite3', group: [:development, :test]
 # Use postgres as the database in production
 gem 'pg', group: :production
 
-gem 'puma', group: :production
-
 gem 'yarn'
 
 # Add 12 factor for Heroku
