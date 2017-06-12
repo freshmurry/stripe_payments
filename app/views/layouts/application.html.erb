@@ -9,21 +9,21 @@
   <meta name="keyword" content="Gospel keyboard chords, gospel keyboard chord list, songs in A flat">
   <link rel='stylesheet' href='http://fonts.googleapis.com/css?family=Open+Sans:400,700,300,800' >
   
-  <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => false %>
-  <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
+  <% = stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => false %>
+  <% = javascript_include_tag 'application', 'data-turbolinks-track' => true %>
   <script src="https://cdn.optimizely.com/js/6611953346.js"></script>
   
-  <%= csrf_meta_tags %>
+  <% = csrf_meta_tags %>
 </head>
 <body>
   <div id="content" class="container">
     <header id="content-header">
       
-      <%= yield :head %>
+      <% = yield :head %>
       
     </header>
 
-    <%= yield %>
+    <% = yield %>
     
   </div>
   
