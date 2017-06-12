@@ -9,14 +9,13 @@
 </section>
 
 <section id="products">
-<% @products.each do |product| %>
-	 <div class="product clearfix">
-   <a href="<%= product_path(product)%>">
-    <div class="product-image-container">
-     <img src="<%= asset_path product.thumbnail_image_name %>" alt="<%= product.title %>"/>
-     <span class="product-price">$<%= product.price %></span>
-   </div>
-   <p class="product-title"><%= product.title %></p></a>
- </div>
-<% end %>
+	<% @products.each do |product| %>
+		 <div class="product clearfix">
+		   <a href="<%= product_path(product) %>"><div class="product-image-container">
+		     <img src="<%= asset_path product.thumbnail_image_name %>" alt="<%= product.title %>"/>
+		     <span class="product-price"><%= number_to_currency(product.price)%></span>
+		   </div>
+		   <p class="product-title"><%= product.title %></p></a>
+		 </div>
+	<% end %>
 </section>
