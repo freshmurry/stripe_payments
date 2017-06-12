@@ -41,4 +41,3 @@ on_worker_boot do
     end
   end
 end
-end
