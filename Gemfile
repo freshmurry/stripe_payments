@@ -8,8 +8,11 @@ gem 'rails', '4.2.6'
 
 # Use sqlite3 as the database for development and test
 gem 'sqlite3', group: [:development, :test]
+
 # Use postgres as the database in production
 gem 'pg', group: :production
+
+gem 'puma', group: :production
 
 gem 'yarn'
 
