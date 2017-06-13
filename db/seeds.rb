@@ -81,7 +81,7 @@ jjhairston = Product.create(
 	title: "You Deserve It", 
     subtitle: "By JJ Hairston and Youthful Praise", author: "Lawrence Murry", 
     length: "Unlimited", author_image_name: "murry.png", 
-    price: "6.99", 
+    price: "4.99",
     sku: "CHORDZ2", 
     download_url: "https://s3.amazonaws.com/one-month-stripe-payments/LawrenceMurryResume.pdf", 
     details: "We'll charge you monthly for unlimited access to Song Chordz", 
