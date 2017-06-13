@@ -58,6 +58,8 @@ ActiveRecord::Schema.define(version: 20160604031048) do
     t.string   "chordz"
     t.text     "author_description"
     t.string   "author_image_name"
+    t.string   "thumbnail_image_name"
+    t.string   "header_image_name"
     t.string   "details"
     t.string   "download_url"
   end
