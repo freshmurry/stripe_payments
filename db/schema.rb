@@ -55,7 +55,7 @@ ActiveRecord::Schema.define(version: 20160604031048) do
     t.decimal  "price"
     t.datetime "created_at"
     t.datetime "updated_at"
-    t.string   "length"
+    t.string   "chordz"
     t.text     "author_description"
     t.string   "author_image_name"
     t.string   "details"

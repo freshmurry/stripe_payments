@@ -5,21 +5,19 @@
 #
 #   cities = City.create([{ name: 'Chicago' }, { name: 'Copenhagen' }])
 #   Mayor.create(name: 'Emanuel', city: cities.first)
-
-	  
-# Monthly Subscription
 	  
 song_chordz = Product.create(
 	title: "Song Chordz", 
     subtitle: "Ulimited Access To Song Chordz", author: "Lawrence Murry", 
-    length: "Unlimited", author_image_name: "murry.png", 
-    price: "6.99", 
+    chordz: "Unlimited", 
+    author_image_name: "murry.png", 
+    price: "4.99", 
     sku: "CHORDZ2", 
     download_url: "https://s3.amazonaws.com/one-month-stripe-payments/LawrenceMurryResume.pdf", 
     details: "We'll charge you monthly for unlimited access to Song Chordz", 
-    description: %{<p>If you are a beginner to intermediate ear-trained keyboard player and are looking for chorded song list, you have come to the right spot.</p>
+    description: %{<p>If you are a beginner to intermediate ear-trained keyboard player and are looking for chords to songs, you have come to the right spot.</p>
 
-            <p>In this series, wou will have access to a ton of songs you've always wanted to learn but just never had the time.</p>
+            <p>In this series, you\'ll have access to a ton of songs you've always wanted to learn but just never had the time.</p>
             <p><strong>What You'll Receive</strong></p>
             <ul class="no-indent">
                 <li>Sheet music written specifically for ear-trained learners</li>
@@ -38,15 +36,16 @@ song_chordz = Product.create(
 jjhairston = Product.create(
 	title: "You Deserve It", 
     subtitle: "By JJ Hairston and Youthful Praise", author: "Lawrence Murry", 
-    length: "Unlimited", author_image_name: "murry.png", 
+    chordz: "50", 
+    author_image_name: "murry.png", 
     price: "4.99",
     sku: "CHORDZ2", 
     download_url: "https://s3.amazonaws.com/one-month-stripe-payments/LawrenceMurryResume.pdf", 
-    details: "We'll charge you monthly for unlimited access to Song Chordz", 
-    description: %{<p>If you are a beginner to intermediate ear-trained keyboard player and are looking for chorded song list, you have come to the right spot.</p>
+    details: "You\'ll receive (1) Song Chordz", 
+    description: %{<p>If you are a beginner to intermediate ear-trained keyboard player and are looking for chords to songs, you have come to the right spot.</p>
 
             <p>In this series, wou will have access to a ton of songs you've always wanted to learn but just never had the time.</p>
-            <p><strong>What You'll Receive</strong></p>
+            <p><strong>What You\'ll Receive</strong></p>
             <ul class="no-indent">
                 <li>Sheet music written specifically for ear-trained learners</li>
                 <li>Basic chord progressions</li>
