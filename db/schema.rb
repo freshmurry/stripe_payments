@@ -18,13 +18,13 @@ ActiveRecord::Schema.define(version: 20160604031048) do
     t.text     "body"
     t.string   "resource_id",   null: false
     t.string   "resource_type", null: false
-    t.integer  "author_id"
-    t.string   "author_type"
+    t.integer  "creator_id"
+    t.string   "creator_type"
     t.datetime "created_at"
     t.datetime "updated_at"
   end
 
-  add_index "active_admin_comments", ["author_type", "author_id"], name: "index_active_admin_comments_on_author_type_and_author_id"
+  add_index "active_admin_comments", ["creator_type", "creator_id"], name: "index_active_admin_comments_on_creator_type_and_creator_id"
   add_index "active_admin_comments", ["namespace"], name: "index_active_admin_comments_on_namespace"
   add_index "active_admin_comments", ["resource_type", "resource_id"], name: "index_active_admin_comments_on_resource_type_and_resource_id"
 
@@ -49,19 +49,16 @@ ActiveRecord::Schema.define(version: 20160604031048) do
   create_table "products", force: :cascade do |t|
     t.string   "title"
     t.string   "subtitle"
-    t.string   "author"
+    t.string   "creator"
     t.text     "description"
     t.string   "sku"
     t.decimal  "price"
     t.datetime "created_at"
     t.datetime "updated_at"
-    t.string   "chordz"
-    t.text     "author_description"
-    t.string   "author_image_name"
-    t.string   "thumbnail_image_name"
-    t.string   "header_image_name"
+    t.string   "length"
+    t.text     "creator_description"
+    t.string   "creator_image_name"
     t.string   "details"
-    t.string   "download_url"
   end
 
   create_table "purchases", force: :cascade do |t|
